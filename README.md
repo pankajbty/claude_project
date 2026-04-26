@@ -36,7 +36,7 @@ dataset = evaluator.generate_dataset(
         "weight": "Athlete's weight in kg",
     },
     num_cases=5,
-    output_file="dataset.json",
+    output_file="tools/files/dataset.json",
 )
 ```
 
@@ -54,7 +54,7 @@ def run_prompt(prompt_inputs):
 ```python
 results = evaluator.run_evaluation(
     run_prompt_function=run_prompt,
-    dataset_file="dataset.json",
+    dataset_file="tools/files/dataset.json",
     extra_criteria="The output should be concise and accurate.",
 )
 ```

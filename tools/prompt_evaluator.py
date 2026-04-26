@@ -475,7 +475,7 @@ def run_prompt(prompt_inputs):
 
 results = evaluator.run_evaluation(
     run_prompt_function=run_prompt,
-    dataset_file="dataset.json",
+    dataset_file="files/dataset.json",
     extra_criteria="""
     The output should include:
     - Daily caloric total

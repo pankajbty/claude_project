@@ -283,7 +283,7 @@ if __name__ == "__main__":
     messages = []
 
     dataset = generate_dataset()
-    with open("dataset.json", "w") as f:
+    with open("files/dataset.json", "w") as f:
         json.dump(dataset, f, indent=2)
     print(dataset)
 

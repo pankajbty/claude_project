@@ -4,7 +4,7 @@ import json
 import re
 import ast
 
-from claude_api import add_user_message, chat
+from tools.claude_api import add_user_message, chat
 
 load_dotenv()
 
@@ -126,7 +126,7 @@ def run_eval(dataset):
     return results
 
 
-with open("dataset.json", "r") as f:
+with open("files/dataset.json", "r") as f:
     dataset = json.load(f)
 
 results = run_eval(dataset)
